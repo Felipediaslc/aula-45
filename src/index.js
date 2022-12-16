@@ -6,7 +6,7 @@ const PORT = process.env.PORT
 const cors = require('cors')
 const Produto = require('./models/produto.model')
 
-app.use(express.json())
+app.use(express.json());
 app.use(cors())
 
 mongoose.connect(process.env.DATABASE)
